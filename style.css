@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Capuche';
+    src: local('Capuche'), 
+          url('capuche/Capuche Trial.otf');
+  }
+
+  @font-face {
+   font-family: 'Bright';
+   src: local('Bright'), 
+         url('/Bright DEMO.otf');
+  
+ }
+
+ @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap');
+
+body {
+   background-color: #F0EBE3;
+}
+
+
+h1 {
+   font-family: Capuche;
+   color: white;
+   font-size: 36px;
+   padding-top: 18px;
+}
+
+h2 {
+   font-family: 'IBM Plex Sans', sans-serif;
+   font-size: 15px;
+   color: white;
+}
+h3{
+   font-size: 15px;
+   padding-top: 23px;
+   word-spacing: 0.25em;
+   padding-bottom: 20px;
+}
+
+
+
+.col-3 {
+   border: 1px solid black;
+}
+
+.col-8 {
+   border: 1px solid black;
+   padding: 404px;
+}
+
+
+#header {
+   background-color: #576F72;
+   padding: 15px;
+}
+
+#menunav {
+   display: flex;
+   justify-content: center;
+
+}
+
+#menu {
+   margin-top: 20px;
+}
+
+#menunav a {
+   text-decoration: none;
+   color: white;
+   margin-left: 13px;
+}
+
+
+#search {
+   width: 100%;
+   max-width: 350px;
+   max-height: 40px;
+   background: rgba(255,255,255,0.2);
+   display: flex;
+   align-items:center ;
+   border-radius: 60px;
+   margin-top: 15px;
+   margin-left: 100px;
+}
+
+#search input {
+   background: transparent;
+   border: 0;
+   outline: none;
+   color: white;
+
+}
+
+#search button {
+   border: 0;
+   border-radius: 50%;
+   width: 35px;
+   height: 35px;
+   background: none;
+   margin-left: 80px;
+}
+
+#subheader {
+   background-color: #2C3639;
+   color: white; 
+   padding-top: 10px;
+}
+
+#menulateral {
+   background-color: #e2d5c0; 
+   text-align: center;
+   vertical-align: middle;
+
+}
+
+#listalateral {
+   list-style-type: none;
+   padding: 40px;
+}
+
+#listalateral li {
+   margin-bottom: 20px;
+}
+
+#listalateral a {
+   text-decoration: none;
+   color: black;
+   font-size: 18px;
+}
+
+#listalateral a:hover {
+   color: white;
+}
+
+#content {
+   display: flex;   
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+#footer {
+   background-color: #576F72;
+}
+
+.card-product {
+   width: 18rem;
+   padding: 10px;
+   margin: 15px;
+   background-color: aliceblue;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-product h2 {
+   color: black;
+   margin-top: 15px;
+}
