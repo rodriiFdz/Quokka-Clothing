@@ -140,8 +140,14 @@ h3{
 
 #footer {
    background-color: #576F72;
-}
 
+}
+#footer .col{
+   text-align: center;
+}
+#row .videos{
+   text-align: center;
+}
 .card-product {
    width: 18rem;
    padding: 10px;
