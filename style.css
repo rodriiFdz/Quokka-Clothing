@@ -55,6 +55,11 @@ h3{
 #header {
    background-color: #576F72;
    padding: 15px;
+   position: fixed;
+   left: 0;
+   top: 0;
+   right: 0;
+   
 }
 
 #header a {
@@ -110,7 +115,7 @@ h3{
 #subheader {
    background-color: #2C3639;
    color: white; 
-   padding-top: 10px;
+   padding-top: 6.5rem;
 }
 
 #menulateral {
