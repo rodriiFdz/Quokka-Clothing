@@ -23,7 +23,10 @@ h1 {
    color: white;
    font-size: 36px;
    padding-top: 18px;
+   
 }
+
+
 
 h2 {
    font-family: 'IBM Plex Sans', sans-serif;
@@ -52,6 +55,10 @@ h3{
 #header {
    background-color: #576F72;
    padding: 15px;
+}
+
+#header a {
+   text-decoration: none;
 }
 
 #menunav {
