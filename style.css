@@ -172,3 +172,18 @@ h3{
    color: black;
    margin-top: 15px;
 }
+
+
+
+#notmasleidas {
+   background-color: white;
+}
+
+#cardnoticia {
+   padding: 10px;
+   margin: 15px;
+   width: 100%;
+   height: 8em;
+   background-color: white;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
