@@ -187,3 +187,50 @@ h3{
    background-color: white;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
+.registro{
+  width: 450px;
+  box-shadow: 10px 15px 45px #000;
+  border-radius: 5px;
+  background: #576F72 ;
+  padding: 40px;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+
+
+}
+
+.datos{
+  background-color: #a9aeaf;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #2C3639;
+  
+}
+
+.registro a{
+  color: aliceblue;
+  text-decoration: none;
+
+}
+.registro a{
+  color: aliceblue;
+  text-decoration: underline;
+
+}
+
+.registro .boton{
+  background-color: #a9aeaf;
+  width: 100%;
+  color: white;
+  margin: 15px;
+
+}
+
+body{
+  background-image: url('https://wallpapercave.com/wp/wp2602697.jpg');
+}
