@@ -15,6 +15,11 @@
 
 body {
    background-color: #F0EBE3;
+   
+}
+
+.fondoregistro {
+   background-image: url('https://wallpapercave.com/wp/wp2602697.jpg'); 
 }
 
 
@@ -173,10 +178,10 @@ h3{
    margin-top: 15px;
 }
 
-
-
 #notmasleidas {
+   margin: 15px; 
    background-color: white;
+   padding: 10px;
 }
 
 #cardnoticia {
@@ -231,6 +236,3 @@ h3{
 
 }
 
-body{
-  background-image: url('https://wallpapercave.com/wp/wp2602697.jpg');
-}
