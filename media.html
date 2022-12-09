@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=IBM+Plex+Sans:ital@1&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css">
   <link rel="icon" type="image/png" href="imagenes/quokka.png" sizes="32x32">
 </head>
@@ -46,35 +47,106 @@
 
     <div class="row">
       <div class="col-md-3" id="menulateral">
+        <h6>Categorías: </h6>
+        <hr>
         <ul id="listalateral">
-          <li><a href="#">PARTES DE ARRIBA</a></li>
-          <li><a href="#">PARTES DE ABAJO</a></li>
-          <li><a href="#">ACCESORIOS</a></li>
+          <li><a href="#">INTERNACIONAL</a></li>
+          <li><a href="#">NACIONAL</a></li>
+          <li><a href="#">REGIONAL</a></li>
         </ul>
       </div>
-      <div class="col-md-6" id="content">
+      <div class="col-md-7" id="content">
         <div  class="cardnoticia"> 
-            <img src="imagenes/not1.jpeg" height="120px" width="160px">
+            <img src="imagenes/TheNorthFace_logo.svg.png" width="200px">
             <div class="contenidonoticia">
-              <h5>Titular</h5>
-              <h6>Subtitulo</h6>
-              <p>Cuerpo</p>
-              <p>Fecha, noticia, ámbito, autor y num. likes</p>
+              <a class="tituloint" href="https://fashionunited.es/noticias/empresas/vf-corp-the-north-face-cierra-ejercicio-rompiendo-la-barrera-de-los-11-000-millones-en-facturacion/2022052038646">The North Face supera los 11.000 millones en facturación.</a>
+              <h6 class="subtitulo">
+                  VF Corporation, empresa líder en la categoría de moda casual,
+                  se supera otro año más. 
+              </h6>
+              <p>
+                La multinacional estadounidense logra disparar el valor de sus ingresos, 
+                como sus beneficios.
+                Según informan desde VF Corp. cierran el año con una cantidad de más de 11.841 millones
+                de dólares, aumentando así un 28,81% sus ganancias. 
+              </p>
+              <div class="pienoticia">
+                <p class="infonoticia">Jaime Martinez, 20/05/2022 <span class="ambint">Internacional</span></p>   
+                <div class="likes">
+                  <img src="imagenes/corazon.png" height="18px" width="18px">
+                  <p class="numlikes">234</p>
+                </div>
+              </div>
             </div>
         </div>
         <div  class="cardnoticia"> 
-            <p>Noticia 2</p>
+          <img src="imagenes/vinokilo.png" width="200px">
+          <div class="contenidonoticia">
+            <a class="tituloreg" href="https://alicanteplaza.es/vinokilo-llega-de-nuevo-a-alicante-una-oportunidad-para-adquirir-ropa-y-accesorios-de-segunda-mano-y-vintage-al-peso">Llega VinoKilo a Alicante</a>
+            <h6 class="subtitulo">
+                Un nuevo concepto de compras de artículos de moda de segunda mano.  
+            </h6>
+            <p>
+              Llega a Alicante VinoKilo, organizando un evento de moda donde se pueden 
+              adquirir todo tipo de prendas usadas que pagarás depediendo del peso de tu cesta,
+              contribuyendo a reducir el gasto en ropa, a su reciclaje y a su reutilización.
+            </p>
+            <div class="pienoticia">
+              <p class="infonoticia"> 24/10/2021 <span class="ambreg">Regional</span></p>   
+              <div class="likes">
+                <img src="imagenes/corazon.png" height="18px" width="18px">
+                <p class="numlikes">789</p>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div  class="cardnoticia"> 
+        <img src="imagenes/Not2.jpg" width="200px">
+        <div class="contenidonoticia">
+          <a class="titulonac" href="https://elpais.com/estilo-de-vida/2022-11-21/la-generacion-z-se-pasa-a-la-ropa-de-segunda-mano-de-una-camisa-de-ralph-lauren-en-el-rastro-a-unos-levis-en-una-tienda-vintage.html">Aumenta las compras de ropa de segunda mano entre jóvenes</a>
+          <h6 class="subtitulo">
+              Adultos y jóvenes apuestan por la ropa usada, denominada comunmente como "Vintage".  
+          </h6>
+          <p>
+            Prendas de todo tipo de marcas muy conocidas como por ejemplo Ralph Lauren o Lacoste, 
+            con unos cuantos años encima, pueden ser encontradas en tiendas de segunda mano o rastros 
+            a precio económico, recuperando modas pasadas.
+          </p>
+          <div class="pienoticia">
+            <p class="infonoticia">Andrea Jiménez, 21/11/2022 <span class="ambnac">Nacional</span></p>   
+            <div class="likes">
+              <img src="imagenes/corazon.png" height="18px" width="18px">
+              <p class="numlikes">1156</p>
+            </div>
+          </div>
         </div>
-        <div  class="cardnoticia"> 
-            <p>Noticia 3</p>
+    </div>
+    <div  class="cardnoticia"> 
+      <img src="imagenes/not4.jpg" width="200px">
+      <div class="contenidonoticia">
+        <a class="tituloreg" href="https://www.elmundo.es/comunidad-valenciana/alicante/2018/11/04/5bddca53ca474129028b4587.html">Larga vida al "Vintage"</a>
+        <h6 class="subtitulo">
+            La Cierva Vintage, convertida en referencia de la moda "second hand".
+        </h6>
+        <p>
+          Se instalan en 2014 en la ciudad de Elche comenzando con escasos clientes debido
+          al reacio pensamiento de la ropa ya usada. 
+          Con el paso del tiempo, más personas han ido apreciando este tipo de prendas hasta conseguir
+          clientes de todas partes de Europa. 
+        </p>
+        <div class="pienoticia">
+          <p class="infonoticia">Elena Vidal, 4/12/2018 <span class="ambreg">Regional</span></p>   
+          <div class="likes">
+            <img src="imagenes/corazon.png" height="18px" width="18px">
+            <p class="numlikes">522</p>
+          </div>
         </div>
-        <div  class="cardnoticia"> 
-            <p>Noticia 4</p>
-        </div>
+      </div>
+  </div>
    
       </div>
-      <div class="col-md-3" >
-        <div id="notmasleidas" style="margin: 15px;">
+      <div class="col-md-2" >
+        <div id="notmasleidas">
         <h5>Noticias más leidas</h5>
         <hr>
         <p>Noticia 1</p>
