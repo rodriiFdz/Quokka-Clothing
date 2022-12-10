@@ -46,7 +46,10 @@ h3{
    padding-bottom: 20px;
 }
 
+.banner img{
+   width: 100%;
 
+}
 
 .col-3 {
    border: 1px solid black;
@@ -191,7 +194,7 @@ h3{
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.cardnoticia {
+#cardnoticia {
    padding: 15px;
    margin: 15px;
    width: 100%;
@@ -256,6 +259,10 @@ h3{
    color: #3E6D9C;
 }
 
+.tituloint:hover {
+   color: #379237;
+}
+
 .titulonac {
    text-decoration: none; 
    font-family: 'Playfair Display', serif; 
@@ -263,11 +270,19 @@ h3{
    color: #10A19D;
 }
 
+.titulonac:hover {
+   color: black;
+}
+
 .tituloreg {
    text-decoration: none; 
    font-family: 'Playfair Display', serif; 
    font-size: 22px;
    color: #EB6440;
+}
+
+.tituloreg:hover {
+   color: #7900FF;
 }
 
 .subtitulo {
@@ -312,3 +327,59 @@ h3{
 .numlikes {
    margin-left: 5px;
 }
+
+@media only screen and (max-width:600px) {
+   
+   #cardnoticia img {
+      display: none;
+   }
+
+   #notmasleidas {
+      display: none;
+   }
+
+   #menulateral {
+      margin-top: 4em;
+   }
+}
+
+@media only screen and (min-width: 600px){
+   .iconoburger {
+      display: none;
+   }
+}
+
+.listamenuburger{
+   display: none;
+ }
+
+ .menuburger {
+   display: none;
+ }
+
+ .menuburger:checked  ~ .listamenuburger{
+   display:block;
+ }
+ 
+
+
+ label {
+   box-sizing: border-box;
+   display: inline-block;
+   border-radius: 5px;
+   width: 30px;
+   height: 30px;
+   line-height: 30px;
+   font-weight: bold;
+   text-align: center;
+   user-select: none;
+ }
+
+ #liburger {
+   display: block;
+   background: lightgrey;
+   margin: 0;
+   padding: 10px;
+   list-style: none;
+   border-bottom: 1px solid grey;
+ }
