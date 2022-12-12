@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" href="imagenes/quokka.png" sizes="32x32">
 </head>
 
-<body>
+<body id="fondoprods">
   <div class="container-fluid">
     <div class="row" id="header">
       <div class="col-4">
@@ -29,9 +29,10 @@
       </div>
       <div class="col-4" id="search">
         <div id="searchstyle">
-          <form action="">
-            <input type="text" placeholder="Busca en nuestra web">
-            <button type="submit"><img src="imagenes/buscar.png" width="25px"></button>
+          <form action="http://www.google.com/search" method="get">
+            <input type="search" name="q">
+            <input type="submit" value=""><img src="imagenes/buscar.png" width="25px"></input>
+          </form>
           </form>
         </div>
       </div>
@@ -74,15 +75,21 @@
           <p><button class="btn btn-dark">Añadir al carrito</button></p>
         </div>
         <div class="card-product">
-          <img src="imagenes/Chaqueta.jpg" width="270px">
+          <img src="imagenes/Prod7.jpg" width="270px">
           <h2>Chaqueta Vintage</h2>
-          <p>72.00</p>
+          <p>Chaqueta negra <br>Marca: Diesel<br>Talla L</p>
+          <p> <span style="color: #F49D1A;"> ★★★ </span>(76)</p>
+          <p style="color: green;">5 disponibles</p>
+          <p>PVP 50.00 &euro;</p>
           <p><button class="btn btn-dark">Añadir al carrito</button></p>
         </div>
         <div class="card-product">
-          <img src="imagenes/Chaqueta.jpg" width="270px">
-          <h2>Chaqueta Vintage</h2>
-          <p>72.00</p>
+          <img src="imagenes/Prod8.jpg" width="270px">
+          <h2>Abrigo Vintage</h2>
+          <p>Abrigo color Beige<br>Marca: Columbia<br>Talla M</p>
+          <p> <span style="color: #F49D1A;"> ★★★★★ </span>(120)</p>
+          <p style="color: green;">8 disponibles</p>
+          <p>PVP 35.00 &euro;</p>
           <p><button class="btn btn-dark">Añadir al carrito</button></p>
         </div>
         <div class="card-product" id="abajo">
@@ -98,21 +105,27 @@
           <img src="imagenes/Prod4.jpg" width="270px">
           <h2>Pantalón Vintage 90s</h2>
           <p>Pantalón marrón<br>Marca: Burberrys<br>Talla 48</p>
-          <p> <span style="color: #F49D1A;"> ★★★★ </span>(68)</p>
+          <p> <span style="color: #F49D1A;"> ★★★★ </span>(76)</p>
           <p style="color: green;">1 disponible</p>
           <p>OFERTA: PVP <span style="text-decoration: line-through;">40.00</span> 15.00 &euro;</p>
           <p><button class="btn btn-dark">Añadir al carrito</button></p>
         </div>
         <div class="card-product">
-          <img src="imagenes/Chaqueta.jpg" width="270px">
-          <h2>Chaqueta Vintage</h2>
-          <p>72.00</p>
+          <img src="imagenes/Prod9.jpg" width="270px">
+          <h2>Pantalón Vintage</h2>
+          <p>Pantalón vaquero azul marino<br>Marca: Levis<br>Talla 44</p>
+          <p> <span style="color: #F49D1A;"> ★★★ </span>(44)</p>
+          <p style="color: green;">5 disponibles</p>
+          <p>PVP 15.00 &euro;</p>
           <p><button class="btn btn-dark">Añadir al carrito</button></p>
         </div>
         <div class="card-product">
-          <img src="imagenes/Chaqueta.jpg" width="270px">
-          <h2>Chaqueta Vintage</h2>
-          <p>72.00</p>
+          <img src="imagenes/Prod10.jpg" width="270px">
+          <h2>Pantalón Vintage</h2>
+          <p>Pantalón vaquero rosa<br>Sin marca<br>Talla 38</p>
+          <p> <span style="color: #F49D1A;"> ★★ </span>(25)</p>
+          <p style="color: green;">2 disponibles</p>
+          <p>PVP 18.00 &euro;</p>
           <p><button class="btn btn-dark">Añadir al carrito</button></p>
         </div>
         <div class="card-product" id="calzado">
@@ -134,31 +147,65 @@
           <p><button class="btn btn-dark">Añadir al carrito</button></p>
         </div>
         <div class="card-product">
-          <img src="imagenes/Chaqueta.jpg" width="270px">
-          <h2>Chaqueta Vintage</h2>
-          <p>72.00</p>
+          <img src="imagenes/Prod11.jpg" width="270px">
+          <h2>Botas</h2>
+          <p>Botas de terciopelo<br>Marca: Gucci<br>Talla 43</p>
+          <p> <span style="color: #F49D1A;"> ★ </span>(12)</p>
+          <p style="color: green;">1 disponible</p>
+          <p>PVP 195.00 &euro;</p>
           <p><button class="btn btn-dark">Añadir al carrito</button></p>
         </div>
         <div class="card-product">
-          <img src="imagenes/Chaqueta.jpg" width="270px">
-          <h2>Chaqueta Vintage</h2>
-          <p>72.00</p>
+          <img src="imagenes/Prod12.jpg" width="270px">
+          <h2>Zapatos</h2>
+          <p>Zapatos marrones de terciopelo<br>Marca: Lousvuiton<br>Talla 41</p>
+          <p> <span style="color: #F49D1A;"> ★★★★ </span>(137)</p>
+          <p style="color: green;">7 disponibles</p>
+          <p>PVP 240.00 &euro;</p>
           <p><button class="btn btn-dark">Añadir al carrito</button></p>
         </div>
       </div>
     </div>
 
-    <div class="row" id="footer">
-      <div class="col" style="border: 1px solid black;">
-        Footer
+
+ <!-- Site footer -->
+ <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>SOBRE NOSOTROS</h6>
+        <p class="text-justify">En QUOKKA CLOTHING encontraras tus articulos vintage al mejor precio. Creamos nuestra tienda en 2010, en Madrid. Desde ese entonces llevamos vendiendo ropa para todos nuestros clientes. Esta empresa fue creada por Alejandro Fresneda y Rodrigo Fernández. Ambos estudiantes de ingenieria informática en Elche.</p>
       </div>
-      <div class="col" style="border: 1px solid black;">
-        Footer
+
+      <div class="col-xs-6 col-md-3">
+        <h6>SEDES</h6>
+        <ul class="footer-links">
+          <li><a href="https://es.wikipedia.org/wiki/Setonix_brachyurus">Madrid</a></li>
+          <li><a href="https://es.wikipedia.org/wiki/Setonix_brachyurus">Barcelona</a></li>
+          <li><a href="https://es.wikipedia.org/wiki/Setonix_brachyurus">Berlín</a></li>
+          <li><a href="https://es.wikipedia.org/wiki/Setonix_brachyurus">Amsterdam</a></li>
+        </ul>
       </div>
-      <div class="col" style="border: 1px solid black;">
-        Footer
+
+      <div class="col-xs-6 col-md-3">
+        <h6>REDES SOCIALES</h6>
+        <ul class="footer-links">
+          <li><a href="https://www.facebook.com/ElefanteVintage/">Twitter</a></li>
+          <li><a href="https://www.facebook.com/ElefanteVintage/">Instagram</a></li>
+          <li><a href="https://www.facebook.com/ElefanteVintage/">Facebook</a></li>
+        </ul>
       </div>
     </div>
-</body>
+    <hr>
+  </div>
 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Políticas de privacidad</p>
+      </div>
+  </div>
+</footer>
+
+</body>
 </html>

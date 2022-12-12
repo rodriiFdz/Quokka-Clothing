@@ -15,25 +15,26 @@
   <link rel="icon" type="image/png" href="imagenes/quokka.png" sizes="32x32">
 </head>
 
-<body>
+<body id="fondomedia">
   <div class="container-fluid">
     <div class="row" id="header">
-      <div class="col-sm-1 col-md-4 col-lg-4 col-xl-4">
+      <div class="col-md-4 ">
         <a href="index.html"><h1>Quokka Clothing</h1></a>
       </div>
       
-      <div class="col-sm-1 col-md-4 col-lg-4 col-xl-4" id="menunav">
+      <div class="col-md-4 " id="menunav">
         <div id="menu">
           <a href="productos.html">PRODUCTOS</a>
           <a href="#">MEDIA</a>
           <a href="registro.html">MI CUENTA</a>
         </div>
       </div>
-      <div class="col-sm-1 col-md-4 col-lg-4 col-xl-4" id="search">
+      <div class="col-4" id="search">
         <div id="searchstyle">
-          <form action="">
-            <input type="text" placeholder="Busca en nuestra web">
-            <button type="submit"><img src="imagenes/buscar.png" width="25px"></button>
+          <form action="http://www.google.com/search" method="get">
+            <input type="search" name="q">
+            <input type="submit" value=""><img src="imagenes/buscar.png" width="25px"></input>
+          </form>
           </form>
         </div>
       </div>
@@ -47,18 +48,18 @@
 
 
     <div class="row">
-      <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3" id="menulateral">
+      <div class=" col-md-3 " id="menulateral">
         <h6>Categorías: </h6>
         <hr>
         <ul id="listalateral">
-          <li><a href="#">INTERNACIONAL</a></li>
-          <li><a href="#">NACIONAL</a></li>
-          <li><a href="#">REGIONAL</a></li>
+          <li><a href="#internacional">INTERNACIONAL</a></li>
+          <li><a href="#nacional">NACIONAL</a></li>
+          <li><a href="#regional">REGIONAL</a></li>
         </ul>
       </div>
-      <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7" id="content">
-        <div  class="col-sm-12 col-md-7 col-lg-7 col-xl-7" id="cardnoticia"> 
-            <img src="imagenes/TheNorthFace_logo.svg.png" width="200px">
+      <div class="col-md-7 " id="content">
+        <div  class="col-md-7" id="cardnoticia"> 
+            <img src="imagenes/TheNorthFace_logo.svg.png" width="200px" id="internacional">
             <div class="contenidonoticia">
               <a class="tituloint" href="https://fashionunited.es/noticias/empresas/vf-corp-the-north-face-cierra-ejercicio-rompiendo-la-barrera-de-los-11-000-millones-en-facturacion/2022052038646">The North Face supera los 11.000 millones en facturación.</a>
               <h6 class="subtitulo">
@@ -80,10 +81,10 @@
               </div>
             </div>
         </div>
-        <div  class="col-sm-1 col-md-7 col-lg-7 col-xl-7" id="cardnoticia"> 
-          <img src="imagenes/Not2.jpg" width="200px">
+        <div  class=" col-md-7" id="cardnoticia"> 
+          <img src="imagenes/Not2.jpg" width="200px" id="nacional">
           <div class="contenidonoticia">
-            <a class="titulonac" href="https://elpais.com/estilo-de-vida/2022-11-21/la-generacion-z-se-pasa-a-la-ropa-de-segunda-mano-de-una-camisa-de-ralph-lauren-en-el-rastro-a-unos-levis-en-una-tienda-vintage.html">Aumenta las compras de ropa de segunda mano entre jóvenes</a>
+            <a class="titulonac" href="https://elpais.com/estilo-de-vida/2022-11-21/la-generacion-z-se-pasa-a-la-ropa-de-segunda-mano-de-una-camisa-de-ralph-lauren-en-el-rastro-a-unos-levis-en-una-tienda-vintage.html">Aumentan las compras de ropa de segunda mano entre jóvenes</a>
             <h6 class="subtitulo">
                 Adultos y jóvenes apuestan por la ropa usada, denominada comunmente como "Vintage".  
             </h6>
@@ -101,8 +102,8 @@
             </div>
           </div>
       </div>
-        <div  class="col-sm-1 col-md-7 col-lg-7 col-xl-7" id="cardnoticia"> 
-          <img src="imagenes/vinokilo.png" width="200px">
+        <div class="col-md-7" id="cardnoticia"> 
+          <img src="imagenes/vinokilo.png" width="200px" id="regional">
           <div class="contenidonoticia">
             <a class="tituloreg" href="https://alicanteplaza.es/vinokilo-llega-de-nuevo-a-alicante-una-oportunidad-para-adquirir-ropa-y-accesorios-de-segunda-mano-y-vintage-al-peso">Llega VinoKilo a Alicante</a>
             <h6 class="subtitulo">
@@ -123,7 +124,7 @@
           </div>
       </div>
      
-    <div  class="col-sm-1 col-md-7 col-lg-7 col-xl-7" id="cardnoticia"> 
+    <div  class="col-md-7" id="cardnoticia"> 
       <img src="imagenes/not4.jpg" width="200px">
       <div class="contenidonoticia">
         <a class="tituloreg" href="https://www.elmundo.es/comunidad-valenciana/alicante/2018/11/04/5bddca53ca474129028b4587.html">Larga vida al "Vintage"</a>
@@ -147,30 +148,56 @@
   </div>
    
       </div>
-      <div class="col-md-2 col-lg-2 col-xl-2" id="contentmasleidas">
+      <div class="col-md-2 c" id="contentmasleidas">
         <div id="notmasleidas">
         <h5>Noticias más leidas</h5>
         <hr>
-        <p>Noticia 1</p>
+        <p class="ambnac">Aumentan las compras de ropa de segunda mano entre jóvenes</p>
         <hr>
-        <p>Noticia 2</p>
+        <p class="ambreg">Llega VinoKilo a Alicante</p>
         <hr>
-        <p>Noticia 3</p>
+        <p class="ambreg">Larga vida al "Vintage"</p>
         </div> 
       </div> 
     </div>
+</body>
 
-    <div class="row" id="footer">
-      <div class="col" style="border: 1px solid black;">
-        Footer
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>SOBRE NOSOTROS</h6>
+        <p class="text-justify">En QUOKKA CLOTHING encontraras tus articulos vintage al mejor precio. Creamos nuestra tienda en 2010, en Madrid. Desde ese entonces llevamos vendiendo ropa para todos nuestros clientes. Esta empresa fue creada por Alejandro Fresneda y Rodrigo Fernández. Ambos estudiantes de ingenieria informática en Elche.</p>
       </div>
-      <div class="col" style="border: 1px solid black;">
-        Footer
+
+      <div class="col-xs-6 col-md-3">
+        <h6>SEDES</h6>
+        <ul class="footer-links">
+          <li><a href="https://es.wikipedia.org/wiki/Setonix_brachyurus">Madrid</a></li>
+          <li><a href="https://es.wikipedia.org/wiki/Setonix_brachyurus">Barcelona</a></li>
+          <li><a href="https://es.wikipedia.org/wiki/Setonix_brachyurus">Berlín</a></li>
+          <li><a href="https://es.wikipedia.org/wiki/Setonix_brachyurus">Amsterdam</a></li>
+        </ul>
       </div>
-      <div class="col" style="border: 1px solid black;">
-        Footer
+
+      <div class="col-xs-6 col-md-3">
+        <h6>REDES SOCIALES</h6>
+        <ul class="footer-links">
+          <li><a href="https://www.facebook.com/ElefanteVintage/">Twitter</a></li>
+          <li><a href="https://www.facebook.com/ElefanteVintage/">Instagram</a></li>
+          <li><a href="https://www.facebook.com/ElefanteVintage/">Facebook</a></li>
+        </ul>
       </div>
     </div>
-</body>
+    <hr>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Políticas de privacidad</p>
+      </div>
+  </div>
+</footer>
 
 </html>

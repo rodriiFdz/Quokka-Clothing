@@ -18,11 +18,20 @@ body {
  background-color: #F0EBE3;
  
 }
-/*
-.fondoregistro {
- background-image: url('https://wallpapercave.com/wp/wp2602697.jpg'); 
-}*/
 
+#fondoprods {
+  background-color: #2C3639; 
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23434f53' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%235a686c' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23728184' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%238e979a' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A9AEAF' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E"); 
+  background-attachment: fixed;
+   background-size: cover;
+}
+
+#fondomedia {
+  background-color: #2C3639; 
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23434f53' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%235a686c' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23728184' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%238e979a' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A9AEAF' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E"); 
+  background-attachment: fixed;
+   background-size: cover;
+}
 
 h1 {
  font-family: Capuche;
@@ -75,6 +84,10 @@ h3{
  text-decoration: none;
 }
 
+#logo:hover {
+  color: #bbb;
+}
+
 #menunav {
  display: flex;
  justify-content: center;
@@ -86,6 +99,10 @@ h3{
  
 }
 
+#menu a:hover {
+  color: #bbb;
+}
+
 #menunav a {
  text-decoration: none;
  color: white;
@@ -95,11 +112,11 @@ h3{
 
 #search {
  width: 100%;
- max-width: 350px;
+ max-width: 275px;
  max-height: 40px;
  background: rgba(255,255,255,0.2);
  display: flex;
- align-items:center ;
+ align-items:right;
  border-radius: 60px;
  margin-top: 15px;
  margin-left: 100px;
@@ -128,16 +145,32 @@ h3{
  padding-top: 6.5rem;
 }
 
+#menulateralindex{
+  background-color: #E4DCCF; 
+ text-align: center;
+ vertical-align: middle;
+ padding: 15px;
+}
+
+#menulateralindex hr {
+  color: black;
+}
+
 #menulateral {
- background-color: #e2d5c0; 
+ background-color: none; 
  text-align: center;
  vertical-align: middle;
  padding: 15px;
 
 }
 
+#menulateral hr {
+  color: white;
+}
+
 #menulateral h6 {
- font-family:  'IBM Plex Sans', sans-serif;;
+ font-family:  'IBM Plex Sans', sans-serif;
+ color: white;
 }
 
 #listalateral {
@@ -152,13 +185,33 @@ h3{
 
 #listalateral a {
  text-decoration: none;
- color: black;
+ color: white;
  font-size: 18px;
 }
 
 #listalateral a:hover {
- color: white;
+ color: black;
 }
+
+#listalateralindex {
+  list-style-type: none;
+  padding: 40px;
+ 
+ }
+ 
+ #listalateralindex li {
+  margin-bottom: 20px;
+ }
+ 
+ #listalateralindex a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+ }
+ 
+ #listalateralindex a:hover {
+  color: white;
+ }
 
 #content {
  display: flex;   
@@ -189,7 +242,12 @@ h3{
  margin-top: 15px;
 }
 
+.card-product:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+}
+
 #notmasleidas {
+font-family: 'Playfair Display', serif; 
  margin: 15px; 
  background-color: white;
  padding: 10px;
@@ -212,67 +270,66 @@ h3{
 
 /*REGISTRO*/
 .registro{
-width: 450px;
-box-shadow: 10px 15px 45px #000;
-border-radius: 5px;
-background: #576F72 ;
-padding: 40px;
-margin: auto;
-margin-top: 80px;
-margin-bottom: 80px;}
-
-/*
-body{
- background-image: url("https://wallpapercave.com/wp/wp2602697.jpg");
-}*/
-
-
-#bodyregistro{
+  width: 450px;
+  box-shadow: 10px 15px 45px #000;
+  border-radius: 5px;
+  background: #576F72 ;
+  padding: 40px;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;}
+  
+  /*
+  body{
+   background-image: url("https://wallpapercave.com/wp/wp2602697.jpg%22);
+  }*/
+  
+  #bodyregistro{
+    background-color: #2C3639;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23434f53' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%235a686c' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23728184' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%238e979a' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A9AEAF' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  }
+  #tituloregistro{
+      color: rgb(238, 233, 233);
+      font-family:capuche;
+      font-weight: 900;
+      font-size: 25px;
+      text-align: center;
+  }
+  
+  .datos{
+  background-color: #a9aeaf;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #2C3639;
+  
+  }
+  
+  .registro a{
+  color: aliceblue;
+  text-decoration: none;
+  
+  }
+  
+  .registro .boton{
   background-color: #2C3639;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23434f53' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%235a686c' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23728184' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%238e979a' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A9AEAF' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
-background-attachment: fixed;
-background-size: cover;
-}
-#tituloregistro{
-    color: rgb(238, 233, 233);
-    font-family:capuche;
-    font-weight: 900;
-    font-size: 25px;
-    text-align: center;
-}
-
-.datos{
-background-color: #a9aeaf;
-width: 100%;
-margin-bottom: 15px;
-padding: 10px;
-border-radius: 5px;
-border: 1px solid #2C3639;
-
-}
-
-.registro a{
-color: aliceblue;
-text-decoration: none;
-
-}
-
-.registro .boton{
-background-color: #2C3639;
-width: 100%;
-color: white;
-border: 1px solid #2C3639;
-}
-
-.registro .boton:hover {
-		background-color: #151a1b;
-		text-shadow: 0 -3rem 0 rgb(255, 255, 255), 0 0 0 #fff;
-	}
-
-
-.checkbox{
-  display: flex;
-}
+  width: 100%;
+  color: white;
+  border: 1px solid #2C3639;
+  }
+  
+  .registro .boton:hover {
+          background-color: #151a1b;
+          text-shadow: 0 -3rem 0 rgb(255, 255, 255), 0 0 0 #fff;
+      }
+  
+  
+  .checkbox{
+    display: flex;
+  }
 
 
 
@@ -422,48 +479,9 @@ border: 1px solid #2C3639;
  #menulateral {
     margin-top: 4em;
  }
+
 }
 
-@media only screen and (min-width: 600px){
- .iconoburger {
-    display: none;
- }
-}
-
-.listamenuburger{
- display: none;
-}
-
-.menuburger {
- display: none;
-}
-
-.menuburger:checked  ~ .listamenuburger{
- display:block;
-}
-
-
-
-label {
- box-sizing: border-box;
- display: inline-block;
- border-radius: 5px;
- width: 30px;
- height: 30px;
- line-height: 30px;
- font-weight: bold;
- text-align: center;
- user-select: none;
-}
-
-#liburger {
- display: block;
- background: lightgrey;
- margin: 0;
- padding: 10px;
- list-style: none;
- border-bottom: 1px solid grey;
-}
 
 
 
