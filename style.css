@@ -227,6 +227,12 @@ body{
 }*/
 
 
+#bodyregistro{
+  background-color: #2C3639;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23434f53' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%235a686c' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23728184' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%238e979a' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A9AEAF' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
 #tituloregistro{
     color: rgb(238, 233, 233);
     font-family:capuche;
@@ -252,11 +258,20 @@ text-decoration: none;
 }
 
 .registro .boton{
-background-color: #162629;
+background-color: #2C3639;
 width: 100%;
 color: white;
 border: 1px solid #2C3639;
+}
 
+.registro .boton:hover {
+		background-color: #151a1b;
+		text-shadow: 0 -3rem 0 rgb(255, 255, 255), 0 0 0 #fff;
+	}
+
+
+.checkbox{
+  display: flex;
 }
 
 
