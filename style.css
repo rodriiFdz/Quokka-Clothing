@@ -42,12 +42,12 @@ h1 {
 }
 
 
-
 h2 {
  font-family: 'IBM Plex Sans', sans-serif;
  font-size: 15px;
  color: white;
 }
+
 h3{
  font-size: 15px;
  padding-top: 23px;
@@ -252,7 +252,30 @@ h3{
   color: white;
   border-radius: 6px;
   text-decoration: none;
+ 
+}
 
+.botondesactivado {
+  padding: 10px 20px;
+  background-color: rgb(185, 185, 185);
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  border: rgb(185, 185, 185);;
+}
+
+.linkexterno {
+  margin-left: 0.5em;
+  text-decoration: none;
+  color: black;
+}
+
+.linkexterno:hover {
+  color:dodgerblue;
+}
+
+.oferta {
+  color: #F57328;
 }
 
 
