@@ -246,6 +246,17 @@ h3{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
 }
 
+.botonadd {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+
+}
+
+
+
 #notmasleidas {
 font-family: 'Playfair Display', serif; 
  margin: 15px; 
