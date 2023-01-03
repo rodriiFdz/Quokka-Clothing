@@ -582,3 +582,20 @@ font-family: 'Playfair Display', serif;
   margin:0
 }
 
+/*CARRITO DE LA COMPRA*/
+.show-cart li {
+  display: flex;
+}
+.card {
+  margin-bottom: 20px;
+}
+.card-img-top {
+  width: 200px;
+  height: 200px;
+  align-self: center;
+}
+
+#botones-carrito{
+  margin-top: 15px;
+}
+
