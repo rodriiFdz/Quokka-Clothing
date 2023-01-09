@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital@1&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css">
   <link rel="icon" type="image/png" href="imagenes/quokka.png" sizes="32x32">
+  <script src="mainregistro.js"></script>
 </head>
 
 <body>
@@ -60,21 +61,79 @@
 
 
     <div class="registro">
-      <h3 id="tituloregistro"> FORMULARIO REGISTRO</h3>
-      <input class="datos" type="text" name="nombre" id="nombre" placeholder="Introduzca su nombre">
-      <input class="datos" type="text" name="apellido" id="apellidos" placeholder="Introduzca sus apellidos">
-      <input class="datos" type="email" name="correo" id="correo" placeholder="Introduzca su correo electrónico">
-      <input class="datos" type="date" name="date" id="date" placeholder="Introduzca su fecha de nacimiento">
-      <input class="datos" type="text" name="dirección" id="dirección" placeholder="Introduzca su dirección de facturación">
-      <input class="datos" type="number" name="numcuenta" id="numcuenta" placeholder="Introduzca su numero de cuenta">
-      <input class="datos" type="password" name="contraseña" id="contraseña" placeholder="Introduzca su contraseña">
- 
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">ACEPTAR</label>
-        </div>
-      <input class="boton" type="submit" value="Finalizar registro">
+      <form id="form">
+        <h3 id="tituloregistro"> FORMULARIO REGISTRO</h3>
+        <input class="datos" type="text" name="nombre" id="nombre" placeholder="Introduzca su nombre">
+        <input class="datos" type="text" name="apellido" id="apellidos" placeholder="Introduzca sus apellidos">
+        <input class="datos" type="email" name="correo" id="correo" placeholder="Introduzca su correo electrónico">
+        <input class="datos" type="date" name="date" id="date" placeholder="Introduzca su fecha de nacimiento">
+        <input class="datos" type="number" name="CP" id="CP" placeholder="CP">
+        <input class="datos" type="text" name="provincia" id="provincia" placeholder="Provincia">
+        <input class="datos" type="text" name="num" id="num" placeholder="Num">
+        <select id="tipoCalle" class="datos" required>
+          <option value="" disabled selected>Tipo de dirección</option>
+          <option value="1">Calle</option>
+          <option value="2">Avenida</option>
+          <option value="3">Plaza</option>
+          <input class="datos" type="text" name="puerta" id="puerta" placeholder="Puerta">
+          <input class="datos" type="text" name="dirección" id="dirección"
+            placeholder="Introduzca su dirección de facturación">
+          <select id="pais" name="nacionalidad" class="datos" required>
+            <option value="" disabled selected>Nacionalidad</option>
+            <option value="1">España</option>
+            <option value="2">Inglaterra</option>
+            <option value="3">Portugal</option>
+            <option value="4">Francia</option>
+            <option value="5">Alemania</option>
+            <input class="datos" type="text" name="dni" id="dni" placeholder="Introduzca su DNI">
+            <div id="mensajeDNI">
+              <p>DNI incorrecto, porfavor ponga el formato correspondiente al DNI</p>
+            </div>
+            <input class="datos" type="text" name="numcuenta" id="numcuenta"
+              placeholder="Introduzca su numero de cuenta">
+            <div id="mensajeCuenta">
+              <p>Numero de cuenta incorrecto, vuelva a introducirlo</p>
+            </div>
+            <input class="datos" type="password" name="contraseña1" id="contraseña1" placeholder="Contraseña">
+            <input class="datos" type="password" name="contraseña2" id="contraseña2" placeholder="Repita la contraseña">
+            <div id="mensajeContraseña">
+              <p>Las contraseñas no son iguales</p>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">ACEPTAR</label>
+            </div>
+            <input class="boton" type="submit" id="boton1" value="Finalizar registro" onclick="validar()" >
+            <input class="boton" type="submit" id="button" value="Enviar Email">
     </div>
+    </form>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+      emailjs.init('8_QzA_KpqJjCWVZSd')
+    </script>
+    <script>
+      const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_qtpq8in';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Enviar Email';
+      alert('Mensaje enviado!');
+    }, (err) => {
+      btn.value = 'Enviar Email';
+      alert(JSON.stringify(err));
+    });
+});
+    </script>
   </body>
 
   <!-- Site footer -->

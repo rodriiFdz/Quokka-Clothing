@@ -16,6 +16,8 @@
 
 </head>
 
+<img src="imagenes/x.png" id="mi-imagen" />
+
 <body id="fondoprods">
   <div class="container-fluid">
     <div class="row" id="header">
@@ -38,8 +40,7 @@
         </div>
       </div>
       <div class="col" id="botones-carrito">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Cart()</button>
-        <button class="clear-cart btn btn-danger">Clear Cart</button>
+        <img src="imagenes/carrito-de-compras.png" data-bs-toggle="modal" data-bs-target="#modalCarrito" height="30px">
       </div>
     </div>
 
@@ -68,7 +69,7 @@
           <p> <span style="color: #F49D1A;"> ★★★★★ </span>(250)</p>
           <p style="color: green;">13 disponibles</p>
           <p>PVP 72.00 &euro;</p>
-          <p><button class="botonadd" onclick="addCarrito(1, 'Chaqueta Vintage', 70.00)">Añadir al carrito</button></p>
+          <p><button id="botonadd1" class="botonadd" onclick="addCarrito(1)">Añadir al carrito</button></p>
         </div>
         <div class="card-product">
           <img src="imagenes/Prod2.jpg" width="270px">
@@ -77,7 +78,7 @@
           <p> <span style="color: #F49D1A;"> ★★ </span>(34)</p>
           <p style="color: green;">2 disponibles</p>
           <p>PVP 25.00 &euro;</p>
-          <p><button class="botonadd">Añadir al carrito</button></p>
+          <p><button id="botonadd2" class="botonadd" onclick="addCarrito(2)">Añadir al carrito</button></p>
         </div>
         <div class="card-product">
           <img src="imagenes/Prod7.jpg" width="270px">
@@ -86,7 +87,7 @@
           <p> <span style="color: #F49D1A;"> ★★★ </span>(76)</p>
           <p style="color: green;">5 disponibles</p>
           <p>PVP 50.00 &euro;</p>
-          <p><button class="botonadd">Añadir al carrito</button></p>
+          <p><button id="botonadd3" class="botonadd" onclick="addCarrito(3)">Añadir al carrito</button></p>
         </div>
         <div class="card-product">
           <img src="imagenes/Prod8.jpg" width="270px">
@@ -115,7 +116,7 @@
           <p> <span style="color: #F49D1A;"> ★★★★ </span>(76)</p>
           <p style="color: green;">1 disponible</p>
           <p class="oferta">OFERTA: PVP <span style="text-decoration: line-through;">40.00</span> 15.00 &euro;</p>
-          <p><button class="botonadd">Añadir al carrito</button></p>
+          <p><button id="botonadd6" class="botonadd" onclick="addCarrito(6)">Añadir al carrito</button></p>
         </div>
         <div class="card-product">
           <img src="imagenes/Prod9.jpg" width="270px">
@@ -124,7 +125,7 @@
           <p> <span style="color: #F49D1A;"> ★★★ </span>(44)</p>
           <p style="color: green;">5 disponibles</p>
           <p>PVP 15.00 &euro;</p>
-          <p><button class="botonadd">Añadir al carrito</button></p>
+          <p><button id="botonadd7" class="botonadd" onclick="addCarrito(7)">Añadir al carrito</button></p>
         </div>
         <div class="card-product">
           <img src="imagenes/Prod10.jpg" width="270px">
@@ -133,7 +134,7 @@
           <p> <span style="color: #F49D1A;"> ★★ </span>(25)</p>
           <p style="color: green;">2 disponibles</p>
           <p>PVP 18.00 &euro;</p>
-          <p><button class="botonadd">Añadir al carrito</button></p>
+          <p><button id="botonadd8" class="botonadd" onclick="addCarrito(8)">Añadir al carrito</button></p>
         </div>
         <div class="card-product" id="calzado">
           <img src="imagenes/Prod5.jpg" width="270px">
@@ -142,7 +143,7 @@
           <p> <span style="color: #F49D1A;"> ★★★★★ </span>(378)</p>
           <p style="color: green;">27 disponibles</p>
           <p>PVP 119.99 &euro;</p>
-          <p><button class="botonadd">Añadir al carrito</button></p>
+          <p><button id="botonadd9" class="botonadd" onclick="addCarrito(9)">Añadir al carrito</button></p>
         </div>
         <div class="card-product">
           <img src="imagenes/Prod6.jpg" width="270px">
@@ -151,7 +152,7 @@
           <p> <span style="color: #F49D1A;"> ★★★★ </span>(125)</p>
           <p style="color: green;">13 disponibles</p>
           <p>PVP 99.99 &euro;</p>
-          <p><button class="botonadd">Añadir al carrito</button></p>
+          <p><button id="botonadd10" class="botonadd" onclick="addCarrito(10)">Añadir al carrito</button></p>
         </div>
         <div class="card-product">
           <img src="imagenes/Prod11.jpg" width="270px">
@@ -160,7 +161,7 @@
           <p> <span style="color: #F49D1A;"> ★ </span>(12)</p>
           <p style="color: green;">1 disponible</p>
           <p class="oferta">OFERTA: PVP <span style="text-decoration: line-through;">195.00</span> 145.00 &euro;</p>
-          <p><button class="botonadd">Añadir al carrito</button></p>
+          <p><button id="botonadd11" class="botonadd" onclick="addCarrito(11)">Añadir al carrito</button></p>
         </div>
         <div class="card-product">
           <img src="imagenes/Prod12.jpg" width="270px">
@@ -169,39 +170,48 @@
           <p> <span style="color: #F49D1A;"> ★★★★ </span>(137)</p>
           <p style="color: green;">7 disponibles</p>
           <p>PVP 240.00 &euro;</p>
-          <p><button class="botonadd">Añadir al carrito</button></p>
+          <p><button id="botonadd12" class="botonadd" onclick="addCarrito(12)">Añadir al carrito</button></p>
         </div>
       </div>
     </div>
 
 
+    <!-- TODO modificar estilo del modal y nombres-->
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade modal-lg" id="modalCarrito" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-       <h1 style="color: black;">Carrito de la compra</h1>
+      <div class="modal-header" id="headerModal">
+        <h5 class="modal-title">Carrito de la compra</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body" id="cuerpo-modal">
-        <h2 id="carritoTotal" style="color: black;">0</h2>
-        <table class="table">
+      <div class="modal-body">
+        <table class="table" id="tablaModal">
           <thead>
-            <th>Id</th>
-            <th>Nombre</th>
+            <th></th>
+            <th>Producto</th>
             <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Subtotal</th>
+            <th></th>
           </thead>
-          <tbody id="cuerpoTabla"></tbody>
+          <tbody id="cuerpoTabla">
+
+          </tbody>
         </table>
-        
+
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <h3>Total: </h3>
+        <p id="carritoTotal">0</p>
+        <p>&euro;</p>
       </div>
     </div>
   </div>
 </div>
+
+
+  
 
     
  <!-- Site footer -->
