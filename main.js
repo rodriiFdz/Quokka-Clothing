@@ -117,6 +117,19 @@ function eliminarDelCarrito(id){
   valorCarrito.innerText = preciosTotales.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 }
 
+function aplicarDescuento() {
+  var carritoTotal = document.getElementById("carritoTotal").innerText;
+  carritoTotal = carritoTotal - (carritoTotal * 0.35);
+  document.getElementById("carritoTotal").innerText = parseTo2(carritoTotal)
+  alert("DESCUENTO DEL 35% APLICADO A LA CESTA");
+  document.getElementById("mi-imagen").style.display = "none";
+  return carritoTotal;
+}
+
+function parseTo2(num) {
+  return parseFloat((Math.round(num * 100) / 100).toFixed(2));
+}
+
 ////////////////////mover imagen
 window.onload = function(){
   moverImagen();
