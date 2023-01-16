@@ -76,6 +76,7 @@ function validarDNI() {
     validarDNI();
     validarCuentaBancaria();
     validarContraseña();
+    comprobarEdad(); 
   }
   
   
@@ -165,4 +166,24 @@ function validarDNI() {
      
     }
   }
-  
+
+  function comprobarEdad() {
+    // Obtener el valor del campo de fecha de nacimiento
+    var birthdate = document.getElementById("date").value;
+    
+    // Convertir la fecha de nacimiento a un objeto de fecha
+    var birthdateObject = new Date(date);
+    
+    // Obtener la fecha actual
+    var currentDate = new Date();
+    
+    // Calcular la edad en años
+    var date = currentDate.getFullYear() - birthdateObject.getFullYear();
+    
+    // Comprobar si la edad es mayor o igual a 18
+    if (date >= 18) {
+      alert("Eres mayor de edad");
+    } else {
+      alert("Eres menor de edad");
+    }
+  }

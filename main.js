@@ -19,7 +19,7 @@ const productos = [
 ]
 
 function carritoVacio(){
-  var cuerpoModal = document.getElementById("cuerpo-modal"); 
+  var cuerpoModal = document.getElementById("modal-body"); 
   if(carrito.length === 0){ 
     cuerpoModal.innerHTML = '<p> Su cesta esta vacía</p>'
 
@@ -65,7 +65,7 @@ function addCarrito(id){
     else {
       
       carrito.push(producto); 
-      var filaProducto = '<tr id="prod'+ producto.id + '"><td><img class="imgProd" src="' + producto.img + '"></td><td id="nombreProd">' + producto.nombre + '</td><td id="precioProd">' + producto.precio + '€ </td><td id="cantidadProd"><button class="botonCarrito" onclick="restarProd('+ producto.id + ')">-</button><spam id="cantidadProd'+ producto.id +'">' + producto.cantidad + '</spam><button class="botonCarrito" onclick="addMasProd('+ producto.id + ')">+</button>'  + '</td><td><img src="imagenes/x.png" class="imgCerrar" onclick="eliminarDelCarrito('+ producto.id + ')"></tr>'
+      var filaProducto = '<tr id="prod'+ producto.id + '"><td><img class="imgProd" src="' + producto.img + '"></td><td id="nombreProd">' + producto.nombre + '</td><td id="precioProd">' + producto.precio + '€ </td><td id="cantidadProd"><button class="botonCarrito" onclick="restarProd('+ producto.id + ')">-</button><spam id="cantidadProd'+ producto.id +'">' + producto.cantidad + '</spam><button class="botonCarrito" onclick="addMasProd('+ producto.id + ')">+</button>'  + '</td><td id="subtotal'+ producto.id + '">' + producto.precio * producto.cantidad + '</td><td><img src="imagenes/x.png" class="imgCerrar" onclick="eliminarDelCarrito('+ producto.id + ')"></tr>'
       tbody.innerHTML += filaProducto; 
     }
 
@@ -79,18 +79,22 @@ function addCarrito(id){
 function addMasProd(id){
   var valorCarrito = document.getElementById("carritoTotal"); 
   var productoCarrito = carrito.find(prod => prod.id === id);
+  var subtotal = document.getElementById("subtotal" + productoCarrito.id); 
   var cantidad = document.getElementById("cantidadProd" + productoCarrito.id);
   productoCarrito.cantidad += 1; 
   cantidad.innerText = productoCarrito.cantidad; 
+  subtotal.innerText = productoCarrito.cantidad * productoCarrito.precio; 
   const preciosTotales = carrito.map(prod => prod.precio * prod.cantidad); 
   valorCarrito.innerText = preciosTotales.reduce((accumulator, currentValue) => accumulator + currentValue, 0); 
+
 }
 
 
 
 function restarProd(id){
-  var valorCarrito = document.getElementById("carritoTotal"); 
+  var valorCarrito = document.getElementById("carritoTotal" ); 
   var productoCarrito = carrito.find(prod => prod.id === id);
+  var subtotal = document.getElementById("subtotal" + productoCarrito.id); 
   var cantidad = document.getElementById("cantidadProd" + productoCarrito.id);
 
   if(productoCarrito.cantidad === 1){ //Cantidad minima del producto es 1
@@ -99,6 +103,7 @@ function restarProd(id){
   else {
     productoCarrito.cantidad -= 1; 
     cantidad.innerText = productoCarrito.cantidad; 
+    subtotal.innerText = productoCarrito.cantidad * productoCarrito.precio; 
     const preciosTotales = carrito.map(prod => prod.precio * prod.cantidad); 
     valorCarrito.innerText = preciosTotales.reduce((accumulator, currentValue) => accumulator + currentValue, 0); 
 }
