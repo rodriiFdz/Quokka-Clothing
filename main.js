@@ -117,6 +117,7 @@ function eliminarDelCarrito(id){
   valorCarrito.innerText = preciosTotales.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 }
 
+
 function aplicarDescuento() {
   var carritoTotal = document.getElementById("carritoTotal").innerText;
   carritoTotal = carritoTotal - (carritoTotal * 0.35);
@@ -139,8 +140,8 @@ function moverImagen(){
 
   let x = 0; // coordenada x de la imagen
   let y = 0; // coordenada y de la imagen
-  let velocidadX = 10; // velocidad de movimiento en el eje x
-  let velocidadY = 10; // velocidad de movimiento en el eje y
+  let velocidadX = 3; // velocidad de movimiento en el eje x
+  let velocidadY = 3; // velocidad de movimiento en el eje y
 
   function moverImagen() {
     // obtiene el ancho y alto de la pantalla
@@ -174,7 +175,7 @@ function moverImagen(){
   setTimeout(function() {
     clearInterval(intervalId);
     imgElement.style.display = "none";
-  }, 10000);
+  }, 20000);
 }
 
 

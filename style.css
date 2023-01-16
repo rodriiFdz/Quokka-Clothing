@@ -139,6 +139,12 @@ h3{
  margin-left: 80px;
 }
 
+#botonGoogle {
+  padding: 1rem;
+  margin-left: 15rem;
+  width: 20rem;
+}
+
 #subheader {
  background-color: #2C3639;
  color: white; 
@@ -694,8 +700,13 @@ font-family: 'Playfair Display', serif;
 }
 
 #botones-carrito{
+  display: flex;
+  padding-left: 20rem;
   margin-top: 20px;
-  margin-left: 7.5rem;
+}
+
+#botones-carrito img {
+  margin-right: 2rem;
 }
 
 .lineaProdCarrito {

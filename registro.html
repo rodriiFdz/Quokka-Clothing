@@ -13,9 +13,12 @@
   <link href="style.css" rel="stylesheet" type="text/css">
   <link rel="icon" type="image/png" href="imagenes/quokka.png" sizes="32x32">
   <script src="mainregistro.js"></script>
+  <script src="google.js"></script>
 </head>
 
 <body>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+
   <div class="container-fluid">
     <header>
       <div class="row" id="header">
@@ -31,15 +34,16 @@
             <a href="#">MI CUENTA</a>
           </div>
         </div>
-        <div class="col-4" id="search">
-          <div id="searchstyle">
-            <form action="http://www.google.com/search" method="get">
-              <input type="search" name="q">
-              <input type="submit" value=""><img src="imagenes/buscar.png" width="25px"></input>
-            </form>
-            </form>
-          </div>
+
+        <div class="col-4" id="botonGoogle">
+          <div id="buttonDiv"></div> 
+          <div id="g_id_onload"
+             data-client_id="41467733401-9bgdg3lrb5l8t4eph0nchapvh60uo6fs.apps.googleusercontent.com"
+              data-callback="handleCredentialResponse">
+         </div>
         </div>
+        
+        
 
     </header>
   </div>
